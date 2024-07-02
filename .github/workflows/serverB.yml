@@ -1,0 +1,11 @@
+name: Server B
+
+on:
+  workflow_call: 
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: echo "Building Server B"
