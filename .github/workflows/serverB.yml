@@ -1,7 +1,10 @@
 name: Server B
 
 on:
-  workflow_call: 
+  push: 
+    tags:
+      - 'v\d+\.\d+\.\d+'
+      - 'v[0-9]{8}-[0-9]{4}' 
     
 jobs:
   build:
